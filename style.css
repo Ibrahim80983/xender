@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+.xender_logo {
+  display: flex;
+  align-items: center;
+}
+.file_transfer.change {
+  display: block;
+}
+.file_media.change {
+  display: block;
+}
+.nav_list {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 7rem;
+  font-family: 微软雅黑, Arial, "Helvetica Neue", Helvetica;
+}
+.media {
+  position: relative;
+}
+
+.file_transfer, .file_media {
+  transition: 0.5s ease;
+  background-color: aliceblue;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  display: none;
+  list-style: none;
+}
+
+
+.xender_logo img {
+  width: 2.5rem;
+  object-fit: contain;
+}
+.xender_logo p,
+.nav_list > li,
+nav p {
+  font-size: 1.2rem;
+}
+.media::after,
+.transfer::after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid black; /* Right slant */
+  border-bottom: 2px solid black; /* Left slant */
+  transform: rotate(45deg); /* Rotate to make the slants form a 'V' shape */
+  margin-left: 5px; /* Space between the text and arrow */
+  vertical-align: middle; /* Aligns arrow with the text */
+  transition: 0.5s ease;
+}
+.active::after {
+  transform: rotate(-135deg); /* Upward arrow */
+}
+.xender_hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  padding: 5rem 7rem 2rem 7rem;
+  background-color: #c7f5f5;
+}
+iframe {
+  width: 50%;
+}
+
+.xender_hero p {
+  width: 45%;
+  padding: 4rem;
+  line-height: 3.2rem;
+}
+.download-icons > div {
+  display: flex;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-family: 微软雅黑, Arial, "Helvetica Neue", Helvetica;
+}
+.download-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 7rem;
+  background-color: #c7f5f5;
+}
+.download-icons > div i {
+  font-size: 2.5rem;
+  margin-right: 1rem;
+  transition: 1s ease;
+}
+.download-icons > div span {
+  font-size: 0.8rem;
+}
+.download-icons > div:hover {
+  box-shadow: 0px 0px 1px 1px #000000;
+}
+.home_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 7rem;
+  gap: 5rem;
+  line-height: 2rem;
+}
+.home_1 > div {
+  width: 40%;
+}
+.home_1 img {
+  width: 30%;
+}
+.home_1 h1 {
+  font-weight: 100;
+  margin-bottom: 2.5rem;
+  line-height: 2.5rem;
+}
+.home_1 li {
+  font-family: 微软雅黑, Arial, "Helvetica Neue", Helvetica;
+}
+.file_media a,
+.file_transfer a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.8rem;
+}
